@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Lato", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* part one  */
+
+nav{
+    background-color: rgb(44 62 80);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    padding: 30px 0;
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBox>a{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navBox a{
+    text-decoration: none;
+    color: white;
+}
+
+.navBox li a:hover{
+    color: #1abc9c;
+    transition: 0.5s;
+}
+
+.navBox ul{
+    display: flex;
+    gap: 35px;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* part two  */
+
+header{
+    width: 100%;
+    height: 780px;
+    margin: auto;
+    background-color: #1abc9c;
+}
+
+.headBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.headBox h1{
+    font-size: 64px;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.headBox p{
+    font-size: 24px;
+    margin-top: 40px;
+    font-family: "Lato", sans-serif; 
+}
+
+.imgBox{
+    width: 20%;
+    height: 250px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.imgBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.starBox{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px;
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+}
+
+.lineBox{
+    width: 120px;
+    background-color: white;
+    height: 4px;
+}
+
+
+/* part three  */
+
+.mainBox{
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2C3E50;
+}
+
+.mainBox h2{
+    font-size: 48px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;    
+}
+    
+.starBoxTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px;
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+}
+
+.lineBoxTwo{
+    width: 120px;
+    background-color: #2C3E50;
+    height: 4px;
+}
+
+.cardBox{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+.boxImg{
+    width: 33%;
+    height: 280px;
+    position: relative;
+}
+
+.boxImg>img{
+    width: 90%;
+    height: 280px;
+    text-align: center;
+    border-radius: 10px;     
+}
+
+.boxImg::before{
+    content: "+";
+    width: 90%;
+    border-radius: 10px;
+    height: 280px;
+    position: absolute;
+    background-color: #1abc9ce6;
+    opacity: 0;
+    font-size: 120px;
+    color: white;
+    transition: 0.8s;
+    line-height: 280px;
+    text-align: center;
+}
+
+.boxImg:hover::before{
+    opacity: 1;
+    text-align: center;
+}
+
+
+/* part four  */
+
+.sectOne{
+    background-color: #1abc9c;
+}
+
+.mainBoxTwo{
+    height: 600px;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainBoxTwo h2{
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.starBoxThree{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px;
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+}
+
+.lineBoxThree{
+    width: 120px;
+    background-color: white;
+    height: 4px;
+}
+
+.textBox{
+    width: 74%;
+    height: 200px;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 120px;
+    font-size: 22px;
+    font-family: "Lato", sans-serif;
+}
+
+.textBox p{
+    margin-left: 30px;
+}
+
+.btnBox{
+    width: 230px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #1abc9c;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.btnBox a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.btnBox:hover{
+    background-color: white;
+    color: #212529;
+}
+.btnBox .color:hover{
+    color: #212529;
+}
+
+/* part five  */
+
+
+.mainBoxThree{
+    height: 850px;
+    background-color: white;
+    color: #2C3E50;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainBoxThree h2{
+    font-size: 48px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.starBoxFour{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px;
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+}
+
+.lineBoxFour{
+    width: 120px;
+    background-color: #2C3E50;
+    height: 4px;
+}
+
+.formBox{
+    width: 60%;
+    position: relative;
+    background-color: white;
+    margin:0 auto 30px;
+}
+
+.formBox label{
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    top: 20px;
+    transition: 0.15s;
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-family: "Lato", sans-serif;
+}
+
+.formBox input{
+    width: 100%;
+    padding: 20px 0;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #ced4da;
+    outline: none;
+
+}
+
+.formBox input:focus+label{
+    top: 0px;
+    font-size: 15px;
+}
+
+.formBox textarea{
+    width: 100%;
+    height: 160px;
+    padding: 20px 0;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #ced4da;
+    outline: none;
+    transition: 0.15s;
+}
+
+.formBox textarea:focus+label{
+    top: 0px;
+    font-size: 15px;
+}
+
+#buttonBox{
+    width: 110px;
+    height: 70px;
+    font-size: 20px;
+    color: white;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 10px;
+    margin-right: 690px;
+    
+}
+
+
+/* part six */
+
+footer{
+    background-color: rgb(44 62 80);
+}
+
+.mainBoxFour{
+    height: 270px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBoxTwo{
+    width: 30%;
+    height: 190px;
+    margin: auto;
+    color: white;
+}
+.textBoxTwo h4{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.textBoxTwo p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    font-family: "Lato", sans-serif;
+}
+
+.textBoxTwo p>a{
+    color: #1abc9c;
+}
+
+.iconBox{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 25px;
+}
+
+.iconBox a{
+    width: 13%;
+    height: 54px;
+    border: 1px solid white ;
+    border-radius: 50%;
+    padding-right: 17px;
+    padding-top: 20px;
+    position: relative;
+    
+}
+
+.iconBox a{
+    font-size: 22px;
+    color: white;
+    padding-left: 11px;
+    padding-top: 15px;
+}
+
+.iconBox a:hover{
+    background-color: white;
+    color: #212529;
+}
+
+.footBox{
+    height: 100px;
+    background-color: #1a252f;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+
+
+
