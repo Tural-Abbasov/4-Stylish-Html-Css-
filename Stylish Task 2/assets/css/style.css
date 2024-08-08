@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* font-family: "Montserrat", sans-serif; */
-/* font-family: "Lato", sans-serif; */
 
 *{
     margin: 0;
@@ -24,10 +22,9 @@ html{
 nav{
     background-color: rgb(44 62 80);
     width: 100%;
-    height: 100px;
     position: fixed;
     top: 0;
-    padding: 30px 0;
+    padding: 35px 0;
     z-index: 1;
     font-family: "Montserrat", sans-serif;
 }
@@ -66,7 +63,7 @@ nav{
 
 header{
     width: 100%;
-    height: 780px;
+    padding-bottom: 100px;
     margin: auto;
     background-color: #1abc9c;
 }
@@ -122,8 +119,7 @@ header{
 /* part three  */
 
 .mainBox{
-    width: 100%;
-    height: 1000px;
+    padding: 100px 0px;
     margin: auto;
     background-color: white;
     display: flex;
@@ -134,7 +130,6 @@ header{
 
 .mainBox h2{
     font-size: 48px;
-    margin-top: 100px;
     margin-bottom: 30px;
     font-family: "Montserrat", sans-serif;    
 }
@@ -156,7 +151,8 @@ header{
 
 .cardBox{
     width: 100%;
-    height: 700px;
+    height: 650px;
+    padding-top: 25px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -206,7 +202,8 @@ header{
 }
 
 .mainBoxTwo{
-    height: 600px;
+    /* height: 600px; */
+    padding: 100px 0px;
     color: white;
     margin: auto;
     display: flex;
@@ -216,7 +213,7 @@ header{
 
 .mainBoxTwo h2{
     font-size: 50px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-bottom: 20px;
     font-family: "Montserrat", sans-serif; 
 }
@@ -237,43 +234,37 @@ header{
 }
 
 .textBox{
-    width: 74%;
-    height: 200px;
+    width: 75%;
+    padding: 50px 100px 80px 0px;
     display: flex;
-    margin-top: 30px;
-    margin-right: 120px;
     font-size: 22px;
     font-family: "Lato", sans-serif;
+    margin: auto;
 }
 
 .textBox p{
     margin-left: 30px;
 }
 
-.btnBox{
-    width: 230px;
-    height: 80px;
+.btnBox a{
+    padding: 20px 30px;
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
     border: 2px solid white;
     border-radius: 10px;
     background-color: #1abc9c;
-    margin-bottom: 40px;
     text-align: center;
-    padding-top: 25px;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
 }
 
-.btnBox a{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
+.btnBox a> i{
+    padding-right: 10px;
 }
 
-.btnBox:hover{
+.btnBox a:hover{
     background-color: white;
-    color: #212529;
-}
-.btnBox .color:hover{
     color: #212529;
 }
 
@@ -281,7 +272,7 @@ header{
 
 
 .mainBoxThree{
-    height: 850px;
+    padding: 80px 0px;
     background-color: white;
     color: #2C3E50;
     margin: auto;
@@ -292,7 +283,6 @@ header{
 
 .mainBoxThree h2{
     font-size: 48px;
-    margin-top: 100px;
     margin-bottom: 20px;
     font-family: "Montserrat", sans-serif; 
 }
@@ -340,11 +330,6 @@ header{
 
 }
 
-.formBox input:focus+label{
-    top: 0px;
-    font-size: 15px;
-}
-
 .formBox textarea{
     width: 100%;
     height: 160px;
@@ -356,7 +341,9 @@ header{
     transition: 0.15s;
 }
 
-.formBox textarea:focus+label{
+.formBox :where(input, textarea):focus~label,
+.formBox :where(input, textarea):not(#email):valid~label,
+#email:invalid~label {
     top: 0px;
     font-size: 15px;
 }
@@ -366,11 +353,10 @@ header{
     height: 70px;
     font-size: 20px;
     color: white;
-    background-color: #1abc9c;
+    background-color: #1abc9c95;
     border: none;
     border-radius: 10px;
-    margin-right: 690px;
-    
+    margin-top: 10px;
 }
 
 
@@ -381,7 +367,7 @@ footer{
 }
 
 .mainBoxFour{
-    height: 270px;
+    padding: 90px 0px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -390,21 +376,18 @@ footer{
 
 .textBoxTwo{
     width: 30%;
-    height: 190px;
     margin: auto;
     color: white;
 }
 .textBoxTwo h4{
     font-size: 24px;
     text-align: center;
-    padding-top: 50px;
     font-family: "Montserrat", sans-serif; 
 }
 
 .textBoxTwo p{
     font-size: 20px;
     text-align: center;
-    padding-top: 15px;
     font-family: "Lato", sans-serif;
 }
 
@@ -420,7 +403,7 @@ footer{
 }
 
 .iconBox a{
-    width: 13%;
+    width: 54px;
     height: 54px;
     border: 1px solid white ;
     border-radius: 50%;
@@ -443,12 +426,13 @@ footer{
 }
 
 .footBox{
-    height: 100px;
+    /* height: 100px; */
+    padding: 30px 0px;
     background-color: #1a252f;
     text-align: center;
     color: white;
-    padding: 50px;
     box-sizing: border-box;
+    font-size: 18px;
     font-family: "Lato", sans-serif;
 }
 
